@@ -3,7 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.section {
+  display: none; /* Hide all sections by default */
+}
+.section.active {
+  display: block; /* Show active section */
+}
 body {
   font-family: "Roboto", sans-serif;
   height: 100vh;
@@ -43,6 +48,9 @@ body {
   color: #fff;
   font-weight: 500;
   font-size: 18px;
+}
+.nav-links a:hover {
+  transform: scale(1.05);
 }
 
 .profile-actions {
@@ -424,5 +432,46 @@ body {
   .footer {
     flex-direction: column; /* Stack footer items vertically */
     padding: 20px; /* Reduce footer padding */
+  }
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+  font-size: 35px;
+  cursor: pointer;
+  display: none; /* Initially hidden */
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  transition: max-height 0.3s ease;
+}
+
+.nav-links.active {
+  display: flex;
+  flex-direction: column; /* Stack links vertically */
+  position: absolute; /* Position the menu */
+  top: 60px; /* Position below the header */
+  right: 30px; /* Align with right side */
+  background-color: rgba(12, 87, 130, 0.8); /* Background for dropdown */
+  padding: 10px;
+  border-radius: 8px; /* Rounded corners */
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide links by default */
+    flex-direction: column; /* Stack links vertically */
+  }
+
+  .hamburger-menu {
+    display: block; /* Show hamburger menu */
+  }
+
+  .header {
+    justify-content: space-between; /* Space out logo and menu */
   }
 }
