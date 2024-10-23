@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <div class="banner">
+      <header class="header">
+        <div class="logo">
+          <img src="Images/Sailogo.png" alt="sai logo" />
+        </div>
+        <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
+        <nav class="nav-links" id="navLinks">
+          <a href="sai-section">Home</a>
+          <a href="sai-section">About Us</a>
+          <a href="sai-section">Contact Us</a>
+          <a href="sai-section">Support</a>
+        </nav>
+        <div class="profile-actions">
+          <button class="post-property">Download App</button>
+        </div>
+      </header>
+
+      <!-- Banner Section -->
+      <div class="banner-content">
+        <h1>Property</h1>
+        <p>Download App for more plots, Property, House, Villa's and Etc..</p>
+        <button class="explore-btn">Download App Now</button>
+      </div>
+    </div>
+
+    <section class="sai-section animate-on-scroll">
+      <div class="text-content">
+        <h1>Find your property with AI</h1>
+        <p>Best property finder in your hand.</p>
+        <a href="https://www.ss.com/en/" class="download-btn"
+          >Download SAI Smart AI App</a
+        >
+      </div>
+      <div class="image-content">
+        <img
+          src="Images/Form - 12.png"
+          alt="sai smart ai"
+          class="video-preview full-image"
+        />
+        <img
+          src="Images/Form - 14.png"
+          alt="sai smart ai"
+          class="video-preview half-image"
+        />
+      </div>
+    </section>
+
+    <!-- subscription -->
+    <section id="pricing" class="pricing-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Real Estate Subscription Plans</h2>
+          <p>
+            Choose from our modern and affordable plans. Get the tools and
+            insights needed to succeed in the real estate market.
+          </p>
+        </div>
+
+        <div class="pricing-cards">
+          <!-- Lite Plan -->
+          <div class="pricing-box">
+            <div class="sticker">Basic Insights</div>
+            <h3>Lite</h3>
+            <p class="price">
+              <span id="price-lite">4000/-₹</span>
+              <span id="duration-lite">Yearly</span>
+            </p>
+            <p>
+              Access essential tools for property listings and buyer inquiries.
+            </p>
+            <ul>
+              <li><i class="fas fa-home"></i> List up to 10 Properties</li>
+              <li><i class="fas fa-user"></i> Basic Buyer Insights</li>
+              <li><i class="fas fa-envelope"></i> Email Support</li>
+              <li class="inactive">
+                <i class="fas fa-times-circle"></i> Featured Listings
+              </li>
+              <li class="inactive">
+                <i class="fas fa-times-circle"></i> Advanced Insights
+              </li>
+            </ul>
+            <button class="subscribe-btn">Subscribe Now</button>
+          </div>
+
+          <!-- Basic Plan -->
+          <div class="pricing-box popular">
+            <div class="sticker">Premium Insights</div>
+            <h3>Basic</h3>
+            <p class="price">
+              <span id="price-basic">7000/-₹</span>
+              <span id="duration-basic">Yearly</span>
+            </p>
+            <p>
+              Expand your listings and get enhanced buyer insights for better
+              decisions.
+            </p>
+            <ul>
+              <li><i class="fas fa-home"></i> List up to 30 Properties</li>
+              <li><i class="fas fa-user-chart"></i> Enhanced Buyer Insights</li>
+              <li><i class="fas fa-envelope"></i> Priority Email Support</li>
+              <li><i class="fas fa-star"></i> Featured Listings</li>
+              <li class="inactive">
+                <i class="fas fa-times-circle"></i> Advanced Analytics
+              </li>
+            </ul>
+            <button class="subscribe-btn">Subscribe Now</button>
+          </div>
+
+          <!-- Plus Plan -->
+          <div class="pricing-box">
+            <div class="sticker">Advanced Analytics</div>
+            <h3>Plus</h3>
+            <p class="price">
+              <span id="price-plus">9,999/-₹</span>
+              <span id="duration-plus">Yearly</span>
+            </p>
+            <p>
+              Unlock advanced tools, premium insights, and maximize your
+              listings.
+            </p>
+            <ul>
+              <li><i class="fas fa-home"></i> Unlimited Property Listings</li>
+              <li>
+                <i class="fas fa-user-chart"></i> Comprehensive Buyer Insights
+              </li>
+              <li><i class="fas fa-envelope"></i> Phone & Email Support</li>
+              <li><i class="fas fa-star"></i> Featured Listings</li>
+              <li>
+                <i class="fas fa-chart-line"></i> Advanced Analytics & Reporting
+              </li>
+            </ul>
+            <button class="subscribe-btn">Subscribe Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <div class="footer">
+      <div class="left">
+        <h3>About-us</h3>
+        <h3>for more support.</h3>
+        <h4>Find your property with AI, Best property finder in your hand.</h4>
+      </div>
+      <div class="center">
+        <h2>Contact Us</h2>
+        <h4>+91 7057XXXX52</h4>
+        <h4>saiproperty@gmail.com</h4>
+        <h4>Plot no.4, New street of wax, India, 4414XX0</h4>
+      </div>
+      <div class="right">
+        <h3>Follow Us</h3>
+        <div class="social-links">
+          <a href="#" target="_blank">Facebook</a>
+          <a href="#" target="_blank">Twitter</a>
+          <a href="#" target="_blank">Instagram</a>
+          <a href="#" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">© 2024 Sai Property. All rights reserved.</p>
+    <script src="index.js"></script>
+    <script>
+      function toggleMenu() {
+        const navLinks = document.getElementById("navLinks");
+        navLinks.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
